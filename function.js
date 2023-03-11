@@ -49,3 +49,16 @@ const sumAll = (...all) => {
 };
 
 sumAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+
+// ----------------- 6 function Closure ------------------
+
+function createMember(name) {
+    return function (lastName) {
+        console.log(name + lastName);
+    };
+    }
+
+const logWithLastName = createMember("Farid ");
+console.log(logWithLastName("Kamalov"));
+console.log(logWithLastName("Kamalov2"));
