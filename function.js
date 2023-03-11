@@ -62,3 +62,8 @@ function createMember(name) {
 const logWithLastName = createMember("Farid ");
 console.log(logWithLastName("Kamalov"));
 console.log(logWithLastName("Kamalov2"));
+
+
+
+// let x =  [31,2,8];
+// console.log(x.sort());
