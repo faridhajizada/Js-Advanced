@@ -15,6 +15,6 @@ console.log(name.toUpperCase());
 console.log(name.toLowerCase());
 console.log(name.substring(0, 3));
 console.log(name.substring(0, 4).toUpperCase());
-console.log(name.split(''));
+// console.log(name.split(''));
 
-console.log(name.repeat(2));
+// console.log(name.repeat(2));
