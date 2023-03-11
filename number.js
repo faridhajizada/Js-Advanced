@@ -55,3 +55,5 @@ console.log(Math.floor(Math.random() * 10) + 5); // случайное числ�
 console.log(Math.floor(Math.random() * 10) + 10); // случайное число от 10 до 20
 
 console.log(Math.floor(Math.random() * 10) + 20); // случайное число от 20 до 30
+
+// console.log(Math.floor(Math.random() * 10) + 30); // случайное число от 30 до 40
