@@ -157,22 +157,19 @@
 //       this.height = height;
 //       this.width = width;
 //     }
-  
+
 //     get area() {
 //       return this.calcArea();
 //     }
-  
+
 //     calcArea() {
 //       return this.height * this.width;
 //     }
 //   }
-  
+
 //   const square = new Rectangle(10, 10);
-  
+
 //   console.log(square.area); // 100
-
-
-
 
 // class StaticMethodCall {
 //     static staticMethod() {
@@ -184,11 +181,9 @@
 //   }
 //   StaticMethodCall.staticMethod();
 //   // 'Вызван статический метод'
-  
+
 //   StaticMethodCall.anotherStaticMethod();
 //   // 'Вызван статический метод из другого статического метода'
-
-
 
 // class Book{
 //     static Genre(){
@@ -198,7 +193,130 @@
 //     static Drama(){
 //         return  this.Genre() + " is Drama"
 //     }
-    
+
 // }
 
 // console.log(Book.Drama());
+
+// class StaticMethodCall {
+//     constructor() {
+//       console.log(StaticMethodCall.staticMethod());
+//       // 'вызван статический метод.'
+
+//       console.log(this.constructor.staticMethod());
+//       // 'вызван статический метод.'
+//     }
+
+//     static staticMethod() {
+//       return 'вызван статический метод.';
+//     }
+//   }
+
+// class Triple {
+//     static triple(n) {
+//       if (n === undefined) {
+//         n = 1;
+//       }
+//       return n * 3;
+//     }
+//   }
+
+//   class BiggerTriple extends Triple {
+//     static triple(n) {
+//       return super.triple(n) * super.triple(n);
+//     }
+//   }
+
+//   console.log(Triple.triple());        // 3
+//   console.log(Triple.triple(6));       // 18
+
+//   var tp = new Triple();
+
+//   console.log(BiggerTriple.triple(3));
+
+// class Person {
+//     constructor(name, age) {
+//       this.name = name;
+//       this.age = age;
+//     }
+
+//     greet() {
+//       return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+//     }
+//   }
+
+//   const john = new Person('John', 30);
+//   console.log(john.greet())
+
+//   const Farid = new Person('Farid', 25);
+//   console.log(Farid.greet());
+
+// class Animal {
+//     constructor(name) {
+//       this.name = name;
+//     }
+//   }
+
+//   class Cat extends Animal {
+//     constructor(name, breed) {
+//       super(name); // вызов конструктора родительского класса
+//       this.breed = breed;
+//     }
+//   }
+
+//   const dog = new Animal("Tuzik")
+//     console.log(dog.name);
+
+//     const wotland = new Cat("Wotland", "Persian")
+//     console.log(wotland.name && wotland.breed);
+
+// class Cat {
+//     constructor(name) {
+//       this.name = name;
+//     }
+
+//     speak() {
+//       console.log(`${this.name} издаёт звук.`);
+//     }
+//   }
+
+//   class Lion extends Cat {
+//     speak() {
+//       super.speak();
+//       console.log(`${this.name} рычит.`);
+//     }
+//   }
+
+//   let l = new Lion('Фаззи');
+//   l.speak();
+
+// class Person {
+
+//     constructor(name) {
+//       this._name = name;
+//     }
+
+//     get name() {
+//       return this._name;
+//     }
+
+//     set name(name) {
+//       this._name = name;
+//     }
+//   }
+
+//   const person = new Person('John');
+//   console.log(person.name); // "John"
+//   person.name = 'Bob';
+//   console.log(person.name); // "Bob"
+
+// function F() {}
+
+// const a = new F();
+// console.log(a instanceof F);
+
+// console.log(F.prototype instanceof Object);
+// console.log(F instanceof Object);
+
+// const b = new C();
+// console.log(b instanceof C);
