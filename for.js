@@ -24,7 +24,6 @@
 //   console.log(i);
 // }
 
-
 // let i = 0;
 
 // for (;;) {
@@ -33,11 +32,9 @@
 //   i++;
 // }
 
-
 // var cats = ['Билл', 'Макс', 'Пикси', 'Алиса', 'Жасмин'];
 // var info = 'Моих кошек зовут ';
 // var para = document.querySelector('p');
-
 
 // for(let i=0; i <cats.length;i++){
 //     // info += cats[i] + ', ';
@@ -50,10 +47,6 @@
 //     }
 // }
 // para.textContent = info;
-
-
-
-
 
 // var contacts = ['Григорий:2232322', 'Марина:3453456', 'Василий:7654322', 'Наталья:9998769', 'Диана:9384975'];
 // var para = document.querySelector('p');
@@ -74,9 +67,6 @@
 //     }
 //   }
 // });
-
-
-
 
 // var n = 0;
 // var x = 0;
@@ -110,10 +100,38 @@
 //     console.log(i);
 //   }
 
-
 //   let i = 0;
 // while (i < 5) {
 //   console.log(i);
 //   i++;
 // }
 // // console.log(i); // 5
+
+// let output = document.querySelector ('.output');
+// const output = document.querySelector('.output');
+
+// for (let i = 0; i <10 ; i--) {
+//     var para = document.createElement('p');
+//     output.appendChild(para);
+//     para.textContent =   i;
+
+// }
+
+// const output = document.querySelector(".output");
+// output.innerHTML = "";
+
+// let i = 10;
+
+// while (i >= 0) {
+//   var para = document.createElement("p");
+//   if (i === 10) {
+//     para.textContent = "Start counting down...";
+//   } else if (i === 0) {
+//     para.textContent = "Blast off!";
+//   } else {
+//     para.textContent = i;
+//   }
+
+//   output.appendChild(para);
+//   i--;
+// }
