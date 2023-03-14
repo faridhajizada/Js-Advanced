@@ -135,3 +135,8 @@
 //   output.appendChild(para);
 //   i--;
 // }
+
+
+var myArray = ['Я', 'люблю', 'шоколадных', 'лягушек'];
+var madeAString = myArray.join(' ');
+console.log(madeAString);
