@@ -179,23 +179,71 @@
 // subFunction1(2);
 // myBigFunction();
 
-function displayMessage() {
-  var html = document.querySelector("html");
+// function displayMessage(msgText, msgType) {
+//   var html = document.querySelector("html");
 
-  var panel = document.createElement("div");
-  panel.setAttribute("class", "msgBox");
-  html.appendChild(panel);
+//   var panel = document.createElement("div");
+//   panel.setAttribute("class", "msgBox");
+//   html.appendChild(panel);
 
-  var msg = document.createElement("p");
-  msg.textContent = "This is a message box";
-  panel.appendChild(msg);
+//   var msg = document.createElement("p");
+//   msg.textContent = msgText;
+//   panel.appendChild(msg);
 
-  var closeBtn = document.createElement("button");
-  closeBtn.textContent = "x";
-  panel.appendChild(closeBtn);
+//   var closeBtn = document.createElement("button");
+//   closeBtn.textContent = "x";
+//   panel.appendChild(closeBtn);
 
-  closeBtn.onclick = function () {
-    panel.parentNode.removeChild(panel);
-  };
+//   closeBtn.onclick = function () {
+//     panel.parentNode.removeChild(panel);
+//   };
+// }
+// // displayMessage();
+
+// var btn = document.querySelector("button");
+
+// btn.onclick = function() {
+//   displayMessage('Woo, this is a different message!');
+// };
+
+// var myText = "I am a string";
+// var newString = myText.replace("string", "sausage");
+// console.log(newString);
+
+const input = document.querySelector('.numberInput');
+const para = document.querySelector('p');
+
+
+function squared(num) {
+  return num * num;
 }
-displayMessage();
+
+function cubed(num) {
+  return num * num * num;
+}
+
+function factorial(num) {
+  var x = num;
+  while (x > 1) {
+    num *= x-1;
+    x--;
+  }
+  return num;
+}
+
+// 5=5
+// 5*4=20
+// 20*3=60
+// 60=120
+
+
+input.onchange = function() {
+  var num = input.value;
+  if (isNaN(num)) {
+    para.textContent = 'You need to enter a number!';
+  } else {
+    para.textContent = num + ' squared is ' + squared(num) + '. ' +
+                       num + ' cubed is ' + cubed(num) + '. ' +
+                       num + ' factorial is ' + factorial(num) + '.';
+  }
+}
