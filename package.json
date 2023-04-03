@@ -1,0 +1,19 @@
+{
+  "name": "js",
+  "version": "1.0.0",
+  "description": "advanced js",
+  "main": "zamikanie.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Farid0558475484/Js-Advanced.git"
+  },
+  "author": "Farid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Farid0558475484/Js-Advanced/issues"
+  },
+  "homepage": "https://github.com/Farid0558475484/Js-Advanced#readme"
+}
