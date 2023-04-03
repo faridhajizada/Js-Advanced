@@ -57,9 +57,16 @@
 // // console.log(hello());
 // hello().then((value) => console.log(value))
 // hello().then(console.log)
-async function hello() {
-    return greeting = await Promise.resolve("Hello");
-  };
-  
-  hello().then(alert);
+//
+var myGeo = navigator.geolocation;
+myGeo.getCurrentPosition(function(position) {
+    var latlng = new google.maps.LatLng(position.coords.latitude,position.coords.longitude);
+    var myOptions = {
+      zoom: 8,
+      center: latlng,
+      mapTypeId: google.maps.MapTypeId.TERRAIN,
+      disableDefaultUI: true
+    }
+    var map = new google.maps.Map(document.querySelector("#map_canvas"), myOptions);
+  });
   
