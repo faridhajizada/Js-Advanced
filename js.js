@@ -13,7 +13,7 @@
 // console.log(''=== null);
 // console.log(''== undefined);
 // console.log({}== null);
-// console.log({}== undefined);    
+// console.log({}== undefined);
 // console.log({}== false);
 // console.log({}== 0);
 // console.log({}== '');
@@ -72,4 +72,15 @@
 
 // console.log({}== NaN);
 
+let a = "a";
+let b = "b";
 
+{
+  a = "A";
+  let b = "B";
+  console.log(a);
+  console.log(b);
+}
+
+console.log(a);
+console.log(b);
