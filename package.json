@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/Farid0558475484/Js-Advanced/issues"
   },
-  "homepage": "https://github.com/Farid0558475484/Js-Advanced#readme"
+  "homepage": "https://github.com/Farid0558475484/Js-Advanced#readme",
+  "dependencies": {
+    "expect": "^29.5.0",
+    "vitest": "^0.30.1"
+  }
 }
