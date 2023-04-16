@@ -33,7 +33,3 @@
 console.log(1.15 + 2.30);
 
 console.log(1.15 + 2.30 == 3.45);
-
-console.log(1.15 + 2.30 == 3.45);
-
-console.log(1.15 + 2.30 == 3.45);
