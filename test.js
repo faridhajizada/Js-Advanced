@@ -16,7 +16,6 @@
 
 // console.log(name);
 
-
 // function User() { }
 // User.prototype = { admin: false };
 
@@ -24,13 +23,22 @@
 // // alert(user.admin);
 // console.log(user.admin);
 
-
 // let a = X;
 // // alert( a == X )
 
 // console.log(a == X);
 
-console.log(1.15 + 2.30);
+// console.log(1.15 + 2.30);
 
-console.log(1.15 + 2.30 == 3.45);
-console.log("test" + 1 + 2);
+// console.log(1.15 + 2.30 == 3.45);
+// console.log("test" + 1 + 2);
+
+function f(n) {
+  if (n < 2) {
+    return 1;
+  }
+
+  return n * f(n - 1);
+}
+
+console.log(f(100));
