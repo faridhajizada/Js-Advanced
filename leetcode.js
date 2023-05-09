@@ -17,3 +17,17 @@ console.log(findDifference([1, 2, 3, 4, 5], [1, 2, 3, 4]));var findDifference = 
 
  
  //sleep leetcode
+
+ function createCounter(n) {
+  let counter = n;
+
+  function increment() {
+    return counter++;
+  }
+  return increment
+
+}
+const counter = createCounter(10);
+console.log(counter()); // output: 6
+console.log(counter()); // output: 7
+console.log(counter()); // output: 8
