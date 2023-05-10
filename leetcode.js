@@ -31,3 +31,10 @@ const counter = createCounter(10);
 console.log(counter()); // output: 6
 console.log(counter()); // output: 7
 console.log(counter()); // output: 8
+
+
+}
+const counter = createCounter(10);
+console.log(counter()); // output: 6
+console.log(counter()); // output: 7
+console.log(counter()); // output: 8
