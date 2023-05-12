@@ -34,7 +34,22 @@ console.log(counter()); // output: 8
 
 
 }
-const counter = createCounter(10);
-console.log(counter()); // output: 6
-console.log(counter()); // output: 7
-console.log(counter()); // output: 8
+
+
+function signFunc(x) {
+  if (x > 0) {
+    return 1;
+  } else if (x < 0) {
+    return -1;
+  } else {
+    return 0;
+  }
+}
+
+function arraySign(nums) {
+  let product = 1;
+  for (let i = 0; i < nums.length; i++) {
+    product *= nums[i];
+  }
+  return signFunc(product);
+}
