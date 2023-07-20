@@ -1,5 +1,5 @@
-// const car = ["Audi", "BMW", "Mercedes", "Volkswagen", "Porsche", "Ferrari"];
-// const fib = [1, 2, 3, 5, 8, 13];
+const car = ["Audi", "BMW", "Mercedes", "Volkswagen", "Porsche", "Ferrari"];
+const fib = [1, 2, 3, 5, 8, 13];
 
 // console.log(car);
 

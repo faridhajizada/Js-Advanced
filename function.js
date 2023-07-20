@@ -1,7 +1,11 @@
-// //  ----------------- 1 Function Declaration -----------------
-// function greet1(name) {
-//   console.log(`Hello ${name}`);
-// }
+//  ----------------- 1 Function Declaration -----------------
+function qwerty(name) {
+  console.log(`Hello ${name}`);
+}
+
+qwerty("wengulum")
+
+
 
 // // ----------------- 2 Function Expression -----------------
 
