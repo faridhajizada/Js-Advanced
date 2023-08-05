@@ -59,3 +59,23 @@
 // function sortBy(arr: any[], fn: Function): any[] {
 //   return arr.sort((a,b) => fn(a) - fn(b))
 // };
+
+
+
+//412. Fizz Buzz
+
+// var fizzBuzz = function(n) {
+//   const output = [];
+  
+//   for (let i = 1; i <= n; i++){
+//       let string = ''
+//       if (i % 3 === 0) string += 'Fizz'
+//       if (i % 5 === 0) string += 'Buzz'
+//       if (string === '') string += i
+      
+//       output.push(string)
+//   }
+
+  
+//   return output;
+// };
