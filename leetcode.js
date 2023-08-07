@@ -60,22 +60,74 @@
 //   return arr.sort((a,b) => fn(a) - fn(b))
 // };
 
-
-
 //412. Fizz Buzz
 
 // var fizzBuzz = function(n) {
 //   const output = [];
-  
+
 //   for (let i = 1; i <= n; i++){
 //       let string = ''
 //       if (i % 3 === 0) string += 'Fizz'
 //       if (i % 5 === 0) string += 'Buzz'
 //       if (string === '') string += i
-      
+
 //       output.push(string)
 //   }
 
-  
 //   return output;
 // };
+
+
+
+
+
+
+
+//1. Two Sum
+
+// const nums = [1, 2, 3, 0, 5, 4, 11, 6, 7, 8, 9];
+// const target = 5;
+
+// const twoSum = function (nums, target) {
+//   const result = [];
+
+//   for (let i = 0; i < nums.length; i++) {
+//     for (let j = i + 1; j < nums.length; j++) {
+//       if (nums[i] + nums[j] === target) {
+//         if (result.length > 0) {
+//           result.push([i, j]);
+//         } else {
+//           result.push(i, j);
+//         }
+//       }
+//     }
+//   }
+//   return result;
+// };
+
+// console.log(twoSum(nums, target));
+
+// const nums = [1, 2, 3, 0, 5, 4, 11, 6, 3, 7, 8, 9];
+// const target = 6;
+
+// const twoSum = function (nums, target) {
+//   const sortNums = [...nums].sort((a, b) => a - b);
+//   let left = 0;
+//   let right = sortNums.length - 1;
+
+//   while (right > left) {
+//     const sum = sortNums[left] + sortNums[right];
+//     if (sum === target) {
+//         const index1 = nums.indexOf(sortNums[left]);
+//         const index2 = nums.lastIndexOf(sortNums[right]);
+//         return [index1, index2];
+//     } else if (sum < target) {
+//       left++;
+//     } else {
+//       right--;
+//     }
+//   }
+//   return [-1, -1];
+// };
+
+// console.log(twoSum(nums, target));
