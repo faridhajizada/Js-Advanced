@@ -141,23 +141,60 @@
 
 // console.log(linearySeacrh(arr, 8));
 
-const arr = [2, 5, 8, 9, 13, 45, 67, 99, 100, 101, 102, 103, 104, 105, 106];
+// const arr = [2, 5, 8, 9, 13, 45, 67, 99, 100, 101, 102, 103, 104, 105, 106];
 
-function binarySearch(arr, num) {
-  let left = 0;
-  let right = arr.length - 1;
-  while (left <= right) {
-    const mid = Math.floor((left + right) / 2);
+// function binarySearch(arr, num) {
+//   let left = 0;
+//   let right = arr.length - 1;
+//   while (left <= right) {
+//     const mid = Math.floor((left + right) / 2);
 
-    if (arr[mid] === num) {
-      return mid; // Искомый элемент найден, возвращаем его индекс
-    } else if (arr[mid] < num) {
-      left = mid + 1; // Искомый элемент может быть в правой половине
-    } else {
-      right = mid - 1; // Искомый элемент может быть в левой половине
-    }
-  }
-  return -1;
-}
+//     if (arr[mid] === num) {
+//       return mid; // Искомый элемент найден, возвращаем его индекс
+//     } else if (arr[mid] < num) {
+//       left = mid + 1; // Искомый элемент может быть в правой половине
+//     } else {
+//       right = mid - 1; // Искомый элемент может быть в левой половине
+//     }
+//   }
+//   return -1;
+// }
 
-console.log(binarySearch(arr, 8));
+// console.log(binarySearch(arr, 8));
+
+
+
+
+
+
+
+
+
+
+// const arr = [2, 5, 8, 9, 13, 45, 67, 99, 100, 101, 1, 3, 4, 15, 106];
+// let count = 0;
+// function selectionSort(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     let min = i; // Индекс минимального элемента, инициализируем текущим индексом
+
+//     for (let j = i + 1; j < arr.length; j++) {
+//       if (arr[j] < arr[min]) {
+//         min = j; // Если находим элемент меньше текущего минимума, обновляем min
+//       }
+//       count += 1;
+//     }
+
+//     if (min !== i) {
+//       // Если найден новый минимум, меняем местами элементы
+//       let temp = arr[i];
+//       arr[i] = arr[min];
+//       arr[min] = temp;
+//     }
+//   }
+
+//   return arr;
+// }
+
+// console.log(selectionSort(arr));
+// console.log(arr.length);
+// console.log("count", count);
