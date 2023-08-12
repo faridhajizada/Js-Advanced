@@ -77,12 +77,6 @@
 //   return output;
 // };
 
-
-
-
-
-
-
 //1. Two Sum
 
 // const nums = [1, 2, 3, 0, 5, 4, 11, 6, 7, 8, 9];
@@ -131,3 +125,39 @@
 // };
 
 // console.log(twoSum(nums, target));
+
+///linearySeacrh
+
+// const arr = [1, 4, 8, 5, 3, 2, 7, 6, 9, 10];
+
+// function linearySeacrh(arr, num) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === num) {
+//       return i;
+//     }
+//   }
+//   return -1;
+// }
+
+// console.log(linearySeacrh(arr, 8));
+
+const arr = [2, 5, 8, 9, 13, 45, 67, 99, 100, 101, 102, 103, 104, 105, 106];
+
+function binarySearch(arr, num) {
+  let left = 0;
+  let right = arr.length - 1;
+  while (left <= right) {
+    const mid = Math.floor((left + right) / 2);
+
+    if (arr[mid] === num) {
+      return mid; // Искомый элемент найден, возвращаем его индекс
+    } else if (arr[mid] < num) {
+      left = mid + 1; // Искомый элемент может быть в правой половине
+    } else {
+      right = mid - 1; // Искомый элемент может быть в левой половине
+    }
+  }
+  return -1;
+}
+
+console.log(binarySearch(arr, 8));
