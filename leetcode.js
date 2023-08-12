@@ -162,15 +162,6 @@
 
 // console.log(binarySearch(arr, 8));
 
-
-
-
-
-
-
-
-
-
 // const arr = [2, 5, 8, 9, 13, 45, 67, 99, 100, 101, 1, 3, 4, 15, 106];
 // let count = 0;
 // function selectionSort(arr) {
@@ -198,3 +189,24 @@
 // console.log(selectionSort(arr));
 // console.log(arr.length);
 // console.log("count", count);
+
+
+
+
+
+const arr = [2, 5, 8, 9, 13, 45, 67, 99, 100, 101, 1, 3, 4, 15, 106];
+
+function bubbleSort(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (let j = 0; j < arr.length - i; j++) {
+      if (arr[j] > arr[j + 1]) {
+        let temp = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = temp;
+      }
+    }
+  }
+  return arr;
+}
+
+console.log(bubbleSort(arr));
