@@ -207,33 +207,44 @@
 
 // console.log(bubbleSort(arr));
 
-var romanToInt = function (s) {
-  const arr = {
-    I: 1,
-    V: 5,
-    X: 10,
-    L: 50,
-    C: 100,
-    D: 500,
-    M: 1000,
-  };
+// var romanToInt = function (s) {
+//   const arr = {
+//     I: 1,
+//     V: 5,
+//     X: 10,
+//     L: 50,
+//     C: 100,
+//     D: 500,
+//     M: 1000,
+//   };
 
-  let result = 0;
+//   let result = 0;
 
-  for (let i = 0; i < s.length; i+=1) {
-    const cur = arr[s[i]];
+//   for (let i = 0; i < s.length; i+=1) {
+//     const cur = arr[s[i]];
 
-    const next = arr[s[i + 1]];
+//     const next = arr[s[i + 1]];
 
-    if (cur < next) {
-      result += next - cur;
-      i++;
-    } else {
-      result += cur;
-    }
-  }
+//     if (cur < next) {
+//       result += next - cur;
+//       i++;
+//     } else {
+//       result += cur;
+//     }
+//   }
 
-  return result;
+//   return result;
+// };
+
+// console.log(romanToInt("LVIII"));
+
+const findTheDifference = function(s, t) {
+  s = s.split('').sort();
+t = t.split('').sort();
+
+for(let i = 0; i < t.length; i++){
+    if(s[i] !== t[i]) return t[i]
+}
+
+return ""
 };
-
-console.log(romanToInt("LVIII"));
