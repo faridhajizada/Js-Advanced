@@ -238,13 +238,28 @@
 
 // console.log(romanToInt("LVIII"));
 
-const findTheDifference = function(s, t) {
-  s = s.split('').sort();
-t = t.split('').sort();
+// const findTheDifference = function(s, t) {
+//   s = s.split('').sort();
+// t = t.split('').sort();
 
-for(let i = 0; i < t.length; i++){
-    if(s[i] !== t[i]) return t[i]
-}
+// for(let i = 0; i < t.length; i++){
+//     if(s[i] !== t[i]) return t[i]
+// }
 
-return ""
+// return ""
+// };
+
+const checkPerfectNumber = function (num) {
+  let sum = 0;
+
+  for (let i = 0; i <= num / 2; i++) {
+    if (num % i === 0) {
+      sum += i;
+    }
+  }
+  if (num === sum && sum !== 0) {
+    return true;
+  } else {
+    return false;
+  }
 };
