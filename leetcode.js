@@ -249,17 +249,35 @@
 // return ""
 // };
 
-const checkPerfectNumber = function (num) {
-  let sum = 0;
+// const checkPerfectNumber = function (num) {
+//   let sum = 0;
 
-  for (let i = 0; i <= num / 2; i++) {
-    if (num % i === 0) {
-      sum += i;
+//   for (let i = 0; i <= num / 2; i++) {
+//     if (num % i === 0) {
+//       sum += i;
+//     }
+//   }
+//   if (num === sum && sum !== 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// };
+
+const nums = [1, 2, 3, 1, 1, 3];
+
+const numIdenticalPairs = function (nums) {
+  let count = 0;
+
+  for (let i = 0; i < nums.length; i++) {
+    for (let j = i + 1; j < nums.length; j++) {
+      if (nums[i] === nums[j]) {
+        console.log(nums[i], nums[j]);
+        count++;
+      }
     }
   }
-  if (num === sum && sum !== 0) {
-    return true;
-  } else {
-    return false;
-  }
+  return count;
 };
+
+console.log(numIdenticalPairs(nums));
