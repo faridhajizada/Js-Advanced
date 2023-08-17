@@ -190,23 +190,50 @@
 // console.log(arr.length);
 // console.log("count", count);
 
+// const arr = [2, 5, 8, 9, 13, 45, 67, 99, 100, 101, 1, 3, 4, 15, 106];
 
+// function bubbleSort(arr) {
+//   for (let i = 0; i < arr.length; i++) {
+//     for (let j = 0; j < arr.length - i; j++) {
+//       if (arr[j] > arr[j + 1]) {
+//         let temp = arr[j];
+//         arr[j] = arr[j + 1];
+//         arr[j + 1] = temp;
+//       }
+//     }
+//   }
+//   return arr;
+// }
 
+// console.log(bubbleSort(arr));
 
+var romanToInt = function (s) {
+  const arr = {
+    I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000,
+  };
 
-const arr = [2, 5, 8, 9, 13, 45, 67, 99, 100, 101, 1, 3, 4, 15, 106];
+  let result = 0;
 
-function bubbleSort(arr) {
-  for (let i = 0; i < arr.length; i++) {
-    for (let j = 0; j < arr.length - i; j++) {
-      if (arr[j] > arr[j + 1]) {
-        let temp = arr[j];
-        arr[j] = arr[j + 1];
-        arr[j + 1] = temp;
-      }
+  for (let i = 0; i < s.length; i+=1) {
+    const cur = arr[s[i]];
+
+    const next = arr[s[i + 1]];
+
+    if (cur < next) {
+      result += next - cur;
+      i++;
+    } else {
+      result += cur;
     }
   }
-  return arr;
-}
 
-console.log(bubbleSort(arr));
+  return result;
+};
+
+console.log(romanToInt("LVIII"));
